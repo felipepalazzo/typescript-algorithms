@@ -1,4 +1,6 @@
 /*
+  TWO NUMBER SUM
+
   Write a function that takes in a non-empty array of distinct integers and an
   integer representing a target sum. If any two numbers in the input array sum
   up to the target sum, the function should return them in an array, in any
@@ -10,15 +12,15 @@
   target sum.
 
 */
-export function twoNumberSum(array:number[], targetSum:number): number[] {
-    const result:number[] = []
-    for(let i = 0; i < array.length; i++){
-      const diff = targetSum - array[i];
-      if(array.includes(diff) && diff !== array[i]){
-        result.push(array[i], diff)
-        return result
-      }
+export function twoNumberSum(array: number[], targetSum: number): number[] {
+  const result: number[] = [];
+  for (let i = 0; i < array.length; i++) {
+    const diff = targetSum - array[i];
+    if (array.includes(diff) && diff !== array[i]) {
+      result.push(array[i], diff);
+      return result;
     }
-  
-    return result
   }
+
+  return result;
+}
