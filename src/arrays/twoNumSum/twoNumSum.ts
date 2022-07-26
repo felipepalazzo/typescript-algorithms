@@ -13,14 +13,14 @@
 
 */
 export function twoNumberSum(array: number[], targetSum: number): number[] {
-  const result: number[] = [];
-  for (let i = 0; i < array.length; i++) {
-    const diff = targetSum - array[i];
-    if (array.includes(diff) && diff !== array[i]) {
-      result.push(array[i], diff);
-      return result;
-    }
-  }
+	const result: number[] = []
+	for (let i = 0; i < array.length; i++) {
+		const diff = targetSum - array[i]
+		if (array.includes(diff) && diff !== array[i]) {
+			result.push(array[i], diff)
+			return result
+		}
+	}
 
-  return result;
+	return result
 }
